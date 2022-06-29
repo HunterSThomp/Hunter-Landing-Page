@@ -1,0 +1,64 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Not Shit Landing Page</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="main" id="main" style="display:block">
+            <header>
+                <h1>Welcome back <span class="flair">Hunter</span></h1>
+            </header>
+
+            <form action="https://google.com" method="GET" autocomplete="off">
+                <label for="q">></label>
+                <input autofocus id="q" name="q" type="search" placeholder="Search...">
+            </form>
+
+        <nav>
+            <br>
+
+            <ul class="entertainment">
+                <a>Entertainment</a>
+                    <li><a href="https://reddit.com/r/all">Reddit</a></li>
+                    <li><a href="https://twitch.tv">Twitch</a></li></li>
+            </ul>
+
+            <ul class="work">
+                <a>Work</a>
+                    <li><a href="https://ess-epeople.albertahealthservices.ca/">EPeople</a></li>
+                    <li><a href="https://esscgy.albertahealthservices.ca/wfc/htmlnavigator/logon">Scheduling</a></li>
+            </ul>
+
+            <ul class="other">
+                <a>Other</a>
+                    <li><a href="https://gmail.com">Email</a></li>
+            </ul>
+
+        </nav>
+        <div class="codes" id="codes">
+            <script>
+                function updateClock() {
+                    var days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY' ];
+                    var todayDate = new Date();
+                    var dateString =
+                    (days[todayDate.getDay()]) + " " +
+                    ("0" + todayDate.getDate()).slice(-2) + "/" +
+                    ("0" + (todayDate.getMonth()+1)).slice(-2) + "/" +
+                    todayDate.getFullYear() + " " +
+                    ("0" + todayDate.getHours()).slice(-2) + ":" +
+                    ("0" + todayDate.getMinutes()).slice(-2) + ":" +
+                    ("0" + todayDate.getSeconds()).slice(-2);
+
+                    document.getElementById('codes').innerHTML = dateString;
+
+                    setTimeout(updateClock, 1000);
+                }
+                updateClock();
+            </script>
+        </div>
+        </div>
+    </body>
+</html>
